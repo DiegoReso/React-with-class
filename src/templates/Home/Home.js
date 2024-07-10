@@ -1,9 +1,9 @@
 
-import './Home.css';
+import './Home.css'
 import {Component} from 'react'
-import { PostCard } from '../../components/PostCard';
-import { loadPosts } from '../../utils/load.posts';
-import { Button } from './Button';
+import { PostCard } from '../../components/PostCard'
+import { loadPosts } from '../../utils/load.posts'
+import { Button } from './Button'
 
 export class Home extends Component{
 
@@ -55,15 +55,7 @@ export class Home extends Component{
 
   }
 
-  componentDidUpdate(){
-   
-  }
 
-  componentWillUnmount(){
-    
-  }
-
-  
   handleChange = (e) =>{
     const {value} = e.target
     this.setState({searchValue: value})
@@ -98,7 +90,7 @@ export class Home extends Component{
           onClick={this.loadMorePosts}
           />
       </section>
-    );
+    )
   }
 }
 
